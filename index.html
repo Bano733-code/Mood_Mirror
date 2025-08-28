@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Mirror</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌸 Mood Mirror 🌸</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="tab-link active" data-tab="journal">Journal</a></li>
+        <li><a href="#" class="tab-link" data-tab="history">Mood History 📊</a></li>
+        <li><a href="#" class="tab-link" data-tab="tips">Tips & Coping 🧘</a></li>
+        <li><a href="#" class="tab-link" data-tab="quotes">Motivational Quotes 🌟</a></li>
+        <li><a href="#" class="tab-link" data-tab="resources">Resources ❤️</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Journal Tab -->
+    <section id="journal" class="tab-content active">
+      <h2>Write Your Mood ✍️</h2>
+      <textarea id="moodInput" placeholder="How are you feeling today?"></textarea>
+      <button id="saveMood">Save Mood</button>
+
+      <div id="moodOutput" class="output-box"></div>
+      <h3>Recent Entries</h3>
+      <ul id="recentEntries"></ul>
+    </section>
+
+    <!-- Mood History -->
+    <section id="history" class="tab-content">
+      <h2>Your Mood History 📅</h2>
+      <ul id="historyList"></ul>
+    </section>
+
+    <!-- Tips -->
+    <section id="tips" class="tab-content">
+      <h2>Coping Tips 🧘</h2>
+      <button id="newTip">Get a Tip</button>
+      <p id="tipBox"></p>
+    </section>
+
+    <!-- Quotes -->
+    <section id="quotes" class="tab-content">
+      <h2>Motivational Quotes 🌟</h2>
+      <button id="newQuote">Show Quote</button>
+      <p id="quoteBox"></p>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="tab-content">
+      <h2>Helpful Resources ❤️</h2>
+      <ul>
+        <li><a href="https://www.7cups.com" target="_blank">7 Cups (Free Online Therapy)</a></li>
+        <li><a href="https://www.headspace.com/" target="_blank">Headspace Meditation</a></li>
+        <li><a href="https://findahelpline.com" target="_blank">Find a Helpline</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
